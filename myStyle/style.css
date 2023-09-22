@@ -110,6 +110,20 @@ button {
     text-wrap: balance;
 }
 
+button:hover {
+animation-duration: 1s;
+    animation-name: btn;
+}
+
+@keyframes btn {
+    from {
+        background-color: #fde66d;
+    }
+    to {
+        background-color: #debf05;
+    }
+}
+
 header {
     background: url("../image/header/Ellipse 1972.svg") 100% 0 no-repeat;
 }
@@ -124,10 +138,10 @@ header::after {
     opacity: 0.2;
     z-index: 0;
     background: linear-gradient(0deg, rgba(255, 92, 77, 0),
-    rgba(235, 70, 159, 63%) ,rgba(131,65,239, 23%),
-    rgba(63,104,249, 33%)), linear-gradient(177deg,
+    rgba(235, 70, 159, 63%), rgba(131, 65, 239, 23%),
+    rgba(63, 104, 249, 33%)), linear-gradient(177deg,
     rgb(235 70 159 / 34%) 0%, rgba(255, 255, 255, 0.30) 100%);
-     background-size: cover;
+    background-size: cover;
     position: absolute;
     left: 0;
     top: 0;
@@ -305,11 +319,12 @@ footer p {
     header {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
     }
+
     header::after {
         opacity: 0.22;
         background: linear-gradient(5deg, rgba(255, 92, 77, 0),
-        rgba(235, 70, 159, 66%) ,rgba(131,65,239, 72%),
-        rgba(63,104,249, 100%)), linear-gradient(177deg,
+        rgba(235, 70, 159, 66%), rgba(131, 65, 239, 72%),
+        rgba(63, 104, 249, 100%)), linear-gradient(177deg,
         rgb(235 70 159 / 34%) 0%, rgba(255, 255, 255, 0.30) 100%);
         bottom: 2%;
     }
@@ -435,7 +450,8 @@ footer p {
         border-radius: 500px;
         padding: 15px;
     }
-    .swiper-button-next img:hover, .swiper-button-prev img:hover{
+
+    .swiper-button-next img:hover, .swiper-button-prev img:hover {
         opacity: .5;
     }
 
@@ -470,6 +486,7 @@ footer p {
     footer {
         margin-bottom: 94px;
     }
+
     footer p {
         margin: 47px 0 47px;
     }
