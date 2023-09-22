@@ -109,6 +109,10 @@ button {
     gap: 4px;
     text-wrap: balance;
 }
+button a{
+    color: inherit;
+    text-decoration: none;
+}
 
 button:hover {
 animation-duration: 1s;
